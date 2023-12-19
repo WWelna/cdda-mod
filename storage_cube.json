@@ -1,0 +1,141 @@
+[
+    {
+        "id": "summon_storage_cube",
+        "type": "SPELL",
+        "name": "Summon Storage Cube",
+        "description": "Summons a spinning cube up to 24 hours that can contain a lot of stuff.",
+        "valid_targets": [ "none" ],
+        "flags": [ "VERBAL", "NO_LEGS", "NO_HANDS", "TARGET_TELEPORT" ],
+        "effect": "spawn_item",
+        "effect_str": "storage_cube",
+        "shape": "blast",
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_duration": 720000,
+        "max_duration": 8640000,
+        "duration_increment": 720000,
+        "max_level": 12,
+        "energy_source": "MANA",
+        "base_casting_time": 100,
+        "base_energy_cost": 600,
+        "difficulty": 0
+      },
+      {
+        "id": "summon_storage_cube_mega",
+        "type": "SPELL",
+        "name": "Summon Mega Storage Cube",
+        "description": "Summons a spinning cube up to 3 days that can contain a really really lot of stuff.",
+        "valid_targets": [ "none" ],
+        "flags": [ "VERBAL", "NO_LEGS", "NO_HANDS", "TARGET_TELEPORT" ],
+        "effect": "spawn_item",
+        "effect_str": "storage_cube_mega",
+        "shape": "blast",
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_duration": 2160000,
+        "max_duration": 25920000,
+        "duration_increment": 2160000,
+        "max_level": 12,
+        "energy_source": "MANA",
+        "base_casting_time": 100,
+        "base_energy_cost": 2000,
+        "difficulty": 0
+      },
+      {
+        "name": "Storage Cube",
+        "type": "GENERIC",
+        "id": "storage_cube",
+        "category": "container",
+        "description": "This is a spinning cube that has massive amounts of space.",
+        "weight": "1 g",
+        "volume": "1 ml",
+        "price": 0,
+        "symbol": "#",
+        "color": "magenta",
+        "flags": [ "TARDIS" ],
+        "pocket_data": [
+            {
+              "pocket_type": "CONTAINER",
+              "moves": 1,
+              "max_contains_volume": "2000 L",
+              "max_contains_weight": "4000 kg",
+              "max_item_volume": "100 L",
+              "max_item_length": "3 meter",
+              "spoil_multiplier": 0.0,
+              "weight_multiplier": 0.0,
+              "volume_multiplier": 0.0,
+              "rigid": false,
+              "magazine_well": "1 L"
+            }
+          ]
+      },
+      {
+        "name": "Mega Storage Cube",
+        "type": "GENERIC",
+        "id": "storage_cube_mega",
+        "copy-from": "storage_cube",
+        "pocket_data": [
+          {
+            "pocket_type": "CONTAINER",
+            "moves": 1,
+            "max_contains_volume": "4000 L",
+            "max_contains_weight": "8000 kg",
+            "max_item_volume": "100 L",
+            "max_item_length": "3 meter",
+            "spoil_multiplier": 0.0,
+            "weight_multiplier": 0.0,
+            "volume_multiplier": 0.0,
+            "rigid": false,
+            "magazine_well": "1 L"
+          }
+        ]
+      },
+      {
+        "id": "summon_liquid_cube",
+        "type": "SPELL",
+        "name": "Summon Liquid Cube",
+        "description": "Summons a spinning cube that can contain liquids.",
+        "valid_targets": [ "none" ],
+        "flags": [ "VERBAL", "NO_LEGS", "NO_HANDS", "TARGET_TELEPORT" ],
+        "effect": "spawn_item",
+        "effect_str": "liquid_cube",
+        "shape": "blast",
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_duration": 360000,
+        "max_duration": 2160000,
+        "duration_increment": 360000,
+        "max_level": 6,
+        "energy_source": "MANA",
+        "base_casting_time": 100,
+        "base_energy_cost": 300,
+        "difficulty": 0
+      },
+      {
+        "name": "Liquid Cube",
+        "type": "GENERIC",
+        "id": "liquid_cube",
+        "category": "container",
+        "description": "This is a spinning cube that sucks up liquids inside itself, you could even boil it inside, if you wanted to...",
+        "weight": "1 g",
+        "volume": "1 ml",
+        "price": 0,
+        "symbol": "#",
+        "color": "blue",
+        "flags": [ "TARDIS"],
+        "pocket_data": [
+            {
+              "pocket_type": "CONTAINER",
+              "watertight": true,
+              "max_contains_volume": "60 L",
+              "max_contains_weight": "120 kg",
+              "max_item_volume": "60 ml",
+              "spoil_multiplier": 0.0,
+              "weight_multiplier": 0.0,
+              "volume_multiplier": 0.0,
+              "rigid": true
+            }
+        ],
+        "qualities": [ [ "BOIL", 2 ], [ "CONTAIN", 1 ] ]
+      }
+]

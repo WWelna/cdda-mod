@@ -1,0 +1,27 @@
+[
+    {
+        "id": "hoarding_book",
+        "type": "BOOK",
+        "category": "manuals",
+        "name": { "str": "The Manual of Excessive Acquisitions"},
+        "description": "A strange book, claiming to be composed of 125% hand foraged recycled paper.",
+        "weight": "920 g",
+        "volume": "750 ml",
+        "price": 10000,
+        "material": [ "paper" ],
+        "looks_like": "cookbook",
+        "symbol": "?",
+        "color": "magenta",
+        "use_action": { "type": "learn_spell", "spells": [ "summon_storage_cube", "summon_storage_cube_mega", "blink_teleport"] }
+    },
+    {
+        "id": "spellbook_tier_1",
+        "copy-from": "spellbook_tier_1",
+        "type": "item_group",
+        "extend": {
+            "entries": [
+                { "item": "hoarding_book", "prob": 15 }
+            ]
+        }
+    }
+]

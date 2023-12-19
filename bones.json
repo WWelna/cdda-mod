@@ -1,0 +1,12 @@
+[
+    {
+        "copy-from": "bone_glue",
+        "type": "recipe",
+        "batch_time_factors": [ 80, 5]
+    },
+    {
+        "copy-from": "superglue",
+        "type": "recipe",
+        "batch_time_factors": [ 80, 5]
+    }
+]

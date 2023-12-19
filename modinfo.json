@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "mauh_mod",
+    "name": "My Mod",
+    "authors": [ "WWelna" ],
+    "description": "New items and recipe rebalancing",
+    "category": "misc_additions",
+    "dependencies": [ "dda", "magiclysm"]
+  }
+]

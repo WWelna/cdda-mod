@@ -1,0 +1,21 @@
+[
+    {
+        "id": "blink_teleport",
+        "type": "SPELL",
+        "name": "blink",
+        "description": "Short range teleportation",
+        "effect": "short_range_teleport",
+        "shape": "blast",
+        "valid_targets": [ "ground" ],
+        "flags": [ "VERBAL", "LOUD", "NO_LEGS", "NO_HANDS", "TARGET_TELEPORT" ],
+        "min_range": 12,
+        "max_range": 20,
+        "range_increment": 0.5,
+        "max_level": 20,
+        "difficulty": 7,
+        "base_casting_time": 100,
+        "spell_class": "MAGUS",
+        "energy_source": "MANA",
+        "base_energy_cost": 300
+      }
+]
