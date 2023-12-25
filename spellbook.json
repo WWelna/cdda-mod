@@ -13,15 +13,5 @@
         "symbol": "?",
         "color": "magenta",
         "use_action": { "type": "learn_spell", "spells": [ "summon_storage_cube", "summon_storage_cube_mega", "blink_teleport"] }
-    },
-    {
-        "id": "spellbook_tier_1",
-        "copy-from": "spellbook_tier_1",
-        "type": "item_group",
-        "extend": {
-            "entries": [
-                { "item": "hoarding_book", "prob": 15 }
-            ]
-        }
     }
 ]

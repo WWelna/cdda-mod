@@ -10,19 +10,9 @@
         "to_hit": -2,
         "material": [ "glass" ],
         "symbol": "#",
-        "color": "mageneta",
+        "color": "magenta",
         "ammo": [ "crystallized_mana" ],
         "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true } },
         "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "crystallized_mana": 1000 } } ]
-      },
-      {
-        "id": "enchanted_misc",
-        "type": "item_group",
-        "copy-from": "enchanted_misc",
-        "extend": {
-          "entries": [
-              { "item": "mana_collector", "prob": 25 }
-          ]
-        }
       }
 ]

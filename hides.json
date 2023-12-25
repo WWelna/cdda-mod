@@ -1,7 +1,0 @@
-[
-    {
-        "copy-from": "cured_hide",
-        "type": "recipe",
-        "batch_time_factors": [ 80, 5]
-    }
-]

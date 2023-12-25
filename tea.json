@@ -1,0 +1,18 @@
+[
+    {
+        "id": "bottle_metal_tea",
+        "type": "GENERIC",
+        "copy-from": "bottle_metal",
+        "category": "tools",
+        "name": { "str": "endless tea bottle" },
+        "price_postapoc": "2500 USD",
+        "use_action": {
+          "target": "tea",
+          "container": "bottle_metal_tea",
+          "target_charges": 3,
+          "moves": 50,
+          "type": "transform",
+          "need_empty": true
+        }
+      }
+]
