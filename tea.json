@@ -5,14 +5,33 @@
         "copy-from": "bottle_metal",
         "category": "tools",
         "name": { "str": "endless tea bottle" },
-        "price_postapoc": "2500 USD",
         "use_action": {
           "target": "tea",
           "container": "bottle_metal_tea",
           "target_charges": 3,
-          "moves": 50,
+          "moves": 100,
           "type": "transform",
           "need_empty": true
         }
+      },
+      {
+        "id": "make_tea",
+        "type": "SPELL",
+        "name": "Delicious Tea",
+        "description": "Summons a bottle of endless delicious tea.",
+        "valid_targets": [ "none" ],
+        "flags": [ "VERBAL", "NO_LEGS", "NO_HANDS", "TARGET_TELEPORT" ],
+        "effect": "spawn_item",
+        "effect_str": "bottle_metal_tea",
+        "min_duration": 90000,
+        "max_duration": 90000,
+        "shape": "blast",
+        "min_damage": 1,
+        "max_damage": 1,
+        "max_level": 1,
+        "energy_source": "MANA",
+        "base_casting_time": 100,
+        "base_energy_cost": 50,
+        "difficulty": 0
       }
 ]

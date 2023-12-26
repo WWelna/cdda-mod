@@ -136,10 +136,9 @@
               "max_contains_volume": "60 L",
               "max_contains_weight": "120 kg",
               "max_item_volume": "60 ml",
-              "spoil_multiplier": 0.0,
-              "weight_multiplier": 0.0,
-              "volume_multiplier": 0.0,
-              "rigid": true
+              "weight_multiplier": 0.50,
+              "volume_multiplier": 0.50,
+              "rigid": false
             }
         ],
         "qualities": [ [ "BOIL", 2 ], [ "CONTAIN", 1 ] ]
