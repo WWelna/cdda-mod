@@ -12,6 +12,6 @@
         "looks_like": "cookbook",
         "symbol": "?",
         "color": "magenta",
-        "use_action": { "type": "learn_spell", "spells": [ "summon_storage_cube", "summon_storage_cube_mega", "blink_teleport", "make_tea"] }
+        "use_action": { "type": "learn_spell", "spells": [ "summon_storage_cube", "summon_storage_cube_mega", "summon_pet_cube", "make_tea"] }
     }
 ]
