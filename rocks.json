@@ -1,0 +1,20 @@
+[
+    {
+        "id": "make_rock",
+        "type": "SPELL",
+        "name": "Summon Pet Rocks",
+        "description": "Summons rocks when you're lonely.",
+        "valid_targets": [ "none" ],
+        "flags": [ "VERBAL", "NO_LEGS", "NO_HANDS", "TARGET_TELEPORT", "PERMANENT" ],
+        "effect": "spawn_item",
+        "effect_str": "rock",
+        "shape": "blast",
+        "min_damage": 40,
+        "max_damage": 40,
+        "max_level": 0,
+        "energy_source": "MANA",
+        "base_casting_time": 50,
+        "base_energy_cost": 80,
+        "difficulty": 0
+      }
+]

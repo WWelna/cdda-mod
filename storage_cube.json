@@ -1,9 +1,30 @@
 [
-    {
+      {
         "id": "summon_storage_cube",
         "type": "SPELL",
         "name": "Summon Storage Cube",
-        "description": "Summons a spinning cube up to 24 hours that can contain a lot of stuff.",
+        "description": "Summons a spinning cube that can contain stuff.",
+        "valid_targets": [ "none" ],
+        "flags": [ "VERBAL", "NO_LEGS", "NO_HANDS", "TARGET_TELEPORT" ],
+        "effect": "spawn_item",
+        "effect_str": "storage2cube",
+        "shape": "blast",
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_duration": 720000,
+        "max_duration": 8640000,
+        "duration_increment": 720000,
+        "max_level": 12,
+        "energy_source": "MANA",
+        "base_casting_time": 100,
+        "base_energy_cost": 250,
+        "difficulty": 0
+      },
+      {
+        "id": "summon_food_storage_cube",
+        "type": "SPELL",
+        "name": "Summon Food Storage Cube",
+        "description": "Summons a spinning cube that can contain stuff and preserve food.",
         "valid_targets": [ "none" ],
         "flags": [ "VERBAL", "NO_LEGS", "NO_HANDS", "TARGET_TELEPORT" ],
         "effect": "spawn_item",
@@ -11,68 +32,21 @@
         "shape": "blast",
         "min_damage": 1,
         "max_damage": 1,
-        "min_duration": 720000,
-        "max_duration": 8640000,
-        "duration_increment": 720000,
-        "max_level": 12,
-        "energy_source": "MANA",
-        "base_casting_time": 100,
-        "base_energy_cost": 300,
-        "difficulty": 0
-      },
-      {
-        "id": "summon_storage_cube_mega",
-        "type": "SPELL",
-        "name": "Summon Mega Storage Cube",
-        "description": "Summons a spinning cube up to 7 days that can contain a really really lot of stuff.",
-        "valid_targets": [ "none" ],
-        "flags": [ "VERBAL", "NO_LEGS", "NO_HANDS", "TARGET_TELEPORT" ],
-        "effect": "spawn_item",
-        "effect_str": "storage_cube_mega",
-        "shape": "blast",
-        "min_damage": 1,
-        "max_damage": 1,
-        "min_duration": 4320000,
+        "min_duration": 8640000,
         "max_duration": 60480000,
-        "duration_increment": 4320000,
-        "max_level": 12,
+        "duration_increment": 8640000,
+        "max_level": 7,
         "energy_source": "MANA",
         "base_casting_time": 100,
         "base_energy_cost": 1000,
         "difficulty": 0
       },
       {
-        "id": "spell_components_cube_mega",
-        "type": "requirement",
-        "components": [ [ [ "crystallized_mana", 10 ] ] ]
-      },
-      {
-        "id": "summon_pet_cube",
-        "type": "SPELL",
-        "name": "Summon Pet Cube",
-        "description": "Summons a spinning cube up to 24 hours that can contain a pet.",
-        "valid_targets": [ "none" ],
-        "flags": [ "VERBAL", "NO_LEGS", "NO_HANDS", "TARGET_TELEPORT" ],
-        "effect": "spawn_item",
-        "effect_str": "pet_cube",
-        "shape": "blast",
-        "min_damage": 1,
-        "max_damage": 1,
-        "min_duration": 720000,
-        "max_duration": 8640000,
-        "duration_increment": 720000,
-        "max_level": 12,
-        "energy_source": "MANA",
-        "base_casting_time": 100,
-        "base_energy_cost": 300,
-        "difficulty": 0
-      },
-      {
-        "name": "Storage Cube",
+        "name": "Food Storage Cube",
         "type": "GENERIC",
         "id": "storage_cube",
         "category": "container",
-        "description": "This is a spinning cube that has massive amounts of space.",
+        "description": "This is a spinning cube.",
         "weight": "1 g",
         "volume": "1 ml",
         "price": 0,
@@ -82,9 +56,9 @@
         "pocket_data": [
             {
               "pocket_type": "CONTAINER",
-              "moves": 1,
-              "max_contains_volume": "2000 L",
-              "max_contains_weight": "4000 kg",
+              "moves": 0,
+              "max_contains_volume": "1000 L",
+              "max_contains_weight": "2000 kg",
               "max_item_volume": "1000 L",
               "max_item_length": "3 meter",
               "spoil_multiplier": 0.0,
@@ -96,25 +70,31 @@
           ]
       },
       {
-        "name": "Mega Storage Cube",
+        "name": "Storage Cube",
         "type": "GENERIC",
-        "id": "storage_cube_mega",
-        "copy-from": "storage_cube",
+        "id": "storage2cube",
+        "category": "container",
+        "description": "This is a spinning cube.",
+        "weight": "1 g",
+        "volume": "1 ml",
+        "price": 0,
+        "symbol": "#",
+        "color": "magenta",
+        "flags": [ "TARDIS" ],
         "pocket_data": [
-          {
-            "pocket_type": "CONTAINER",
-            "moves": 1,
-            "max_contains_volume": "4000 L",
-            "max_contains_weight": "8000 kg",
-            "max_item_volume": "1000 L",
-            "max_item_length": "3 meter",
-            "spoil_multiplier": 0.0,
-            "weight_multiplier": 0.0,
-            "volume_multiplier": 0.0,
-            "rigid": false,
-            "magazine_well": "1 L"
-          }
-        ]
+            {
+              "pocket_type": "CONTAINER",
+              "moves": 0,
+              "max_contains_volume": "1000 L",
+              "max_contains_weight": "2000 kg",
+              "max_item_volume": "1000 L",
+              "max_item_length": "3 meter",
+              "weight_multiplier": 0.0,
+              "volume_multiplier": 0.0,
+              "rigid": false,
+              "magazine_well": "1 L"
+            }
+          ]
       },
       {
         "id": "summon_liquid_cube",
@@ -128,13 +108,13 @@
         "shape": "blast",
         "min_damage": 1,
         "max_damage": 1,
-        "min_duration": 360000,
-        "max_duration": 2160000,
-        "duration_increment": 360000,
-        "max_level": 6,
+        "min_duration": 720000,
+        "max_duration": 8640000,
+        "duration_increment": 720000,
+        "max_level": 12,
         "energy_source": "MANA",
         "base_casting_time": 100,
-        "base_energy_cost": 300,
+        "base_energy_cost": 250,
         "difficulty": 0
       },
       {
@@ -153,27 +133,14 @@
             {
               "pocket_type": "CONTAINER",
               "watertight": true,
-              "max_contains_volume": "60 L",
-              "max_contains_weight": "120 kg",
-              "max_item_volume": "60 ml",
+              "max_contains_volume": "240 L",
+              "max_contains_weight": "480 kg",
+              "max_item_volume": "120 ml",
               "weight_multiplier": 0.50,
               "volume_multiplier": 0.50,
               "rigid": false
             }
         ],
         "qualities": [ [ "BOIL", 2 ], [ "CONTAIN", 1 ] ]
-      },
-      {
-        "name": "Pet Cube",
-        "copy-from": "pet_carrier",
-        "id": "pet_cube",
-        "type": "TOOL",
-        "description": "This is a spinning cube that holds your pet.",
-        "weight": "1 g",
-        "volume": "1 ml",
-        "price": 0,
-        "color": "brown",
-        "properties": { "creature_size_capacity": "HUGE" },
-        "looks_like": "pet_carrier"
       }
 ]
