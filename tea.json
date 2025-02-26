@@ -5,14 +5,25 @@
         "copy-from": "thermos",
         "category": "tools",
         "name": { "str": "endless tea bottle" },
+        "description": "A Thermos brand vacuum flask.  Built for temperature retention, helps keep things hot or cold.  Contains 4 L of liquid.",
+        "volume": "4250 ml",
         "use_action": {
           "target": "tea",
           "container": "thermos_tea",
-          "target_charges": 4,
+          "target_charges": 16,
           "moves": 100,
           "type": "transform",
           "need_empty": true
-        }
+        },
+        "pocket_data": [
+          {
+            "pocket_type": "CONTAINER",
+            "rigid": true,
+            "watertight": true,
+            "max_contains_volume": "4 L",
+            "max_contains_weight": "12 kg"
+          }
+        ]
     },
     {
       "id": "thermos_teagreen",
@@ -20,13 +31,60 @@
       "copy-from": "thermos",
       "category": "tools",
       "name": { "str": "endless green tea bottle" },
+      "description": "A Thermos brand vacuum flask.  Built for temperature retention, helps keep things hot or cold.  Contains 4 L of liquid.",
+      "volume": "4250 ml",
       "use_action": {
         "target": "tea_green",
         "container": "thermos_teagreen",
-        "target_charges": 4,
+        "target_charges": 16,
         "moves": 100,
         "type": "transform",
         "need_empty": true
-      }
+      },
+      "pocket_data": [
+        {
+          "pocket_type": "CONTAINER",
+          "rigid": true,
+          "watertight": true,
+          "max_contains_volume": "4 L",
+          "max_contains_weight": "12 kg"
+        }
+      ]
+  },
+  {
+    "id": "make_btea",
+    "type": "SPELL",
+    "name": "Summon Delicious Black Tea",
+    "description": "A Very British Day.",
+    "valid_targets": [ "none" ],
+    "flags": [ "VERBAL", "NO_LEGS", "NO_HANDS", "TARGET_TELEPORT", "PERMANENT" ],
+    "effect": "spawn_item",
+    "effect_str": "tea_raw",
+    "shape": "blast",
+    "min_damage": 40,
+    "max_damage": 40,
+    "max_level": 1,
+    "energy_source": "MANA",
+    "base_casting_time": 50,
+    "base_energy_cost": 160,
+    "difficulty": 0
+  },
+  {
+    "id": "make_gtea",
+    "type": "SPELL",
+    "name": "Summon Delicious Green Tea",
+    "description": "A Very British Day.",
+    "valid_targets": [ "none" ],
+    "flags": [ "VERBAL", "NO_LEGS", "NO_HANDS", "TARGET_TELEPORT", "PERMANENT" ],
+    "effect": "spawn_item",
+    "effect_str": "tea_green_raw",
+    "shape": "blast",
+    "min_damage": 40,
+    "max_damage": 40,
+    "max_level": 1,
+    "energy_source": "MANA",
+    "base_casting_time": 50,
+    "base_energy_cost": 160,
+    "difficulty": 0
   }
 ]

@@ -1,0 +1,85 @@
+[
+    {
+        "id": "mauh_charger",
+        "type": "TOOL",
+        "name": { "str": "Mauh UPS (off)", "str_pl": "Mauh UPSes (off)" },
+        "description": ".",
+        "weight": "680 g",
+        "volume": "12500 ml",
+        "price": "5 kUSD",
+        "price_postapoc": "50 USD",
+        "to_hit": { "grip": "none", "length": "short", "surface": "any", "balance": "uneven" },
+        "material": [ "aluminum", "plastic" ],
+        "symbol": ";",
+        "color": "light_gray",
+        "ammo": [ "lamp_oil", "crude_lamp_oil", "diesel", "jp8", "avgas", "turpentine", "conc_alcohol" ],
+        "pocket_data": [
+            {
+                "pocket_type": "MAGAZINE_WELL",
+                "rigid": true,
+                "item_restriction": [ "mauh_tank" ],
+                "default_magazine": "mauh_tank"
+              }
+        ],
+        "use_action": {
+          "target": "mauh_charger_on",
+          "msg": "You turn the charger on.",
+          "active": true,
+          "need_charges": 1,
+          "need_charges_msg": "The charger's tank is empty.",
+          "type": "transform"
+        },
+        "melee_damage": { "bash": 8 }
+      },
+      {
+        "id": "mauh_charger_on",
+        "copy-from": "mauh_charger",
+        "type": "TOOL",
+        "name": { "str": "Mauh UPS (on)", "str_pl": "Mauh UPSes (on)" },
+        "description": ".",
+        "power_draw": "60 mW",
+        "fuel_efficiency": 0.1,
+        "flags": [ "IS_UPS", "ALLOWS_REMOTE_USE" ],
+        "revert_to": "mauh_charger",
+        "use_action": {
+          "ammo_scale": 0,
+          "target": "mauh_charger",
+          "msg": "The charger is extinguished.",
+          "menu_text": "Turn off",
+          "type": "transform"
+        }
+      },
+      {
+        "id": "mauh_tank",
+        "looks_like": "pressurized_tank",
+        "type": "MAGAZINE",
+        "name": { "str": "Mauh Tank" },
+        "description": ".",
+        "weight": "9800 g",
+        "volume": "10500 ml",
+        "longest_side": "630 mm",
+        "price": "200 USD",
+        "price_postapoc": "7 USD 50 cent",
+        "material": [ "steel" ],
+        "symbol": "#",
+        "color": "light_gray",
+        "ammo_type": [ "lamp_oil", "crude_lamp_oil", "diesel", "jp8", "avgas", "turpentine", "conc_alcohol" ],
+        "reload_time": 3,
+        "pocket_data": [
+            {
+                "pocket_type": "MAGAZINE",
+                "rigid": true,
+                "ammo_restriction": {
+                    "lamp_oil": 10000,
+                    "crude_lamp_oil": 10000,
+                    "diesel": 10000,
+                    "jp8": 10000,
+                    "avgas": 10000,
+                    "turpentine": 10000,
+                    "conc_alcohol": 10000
+                },
+                "watertight": true 
+            }
+        ]
+      }
+]

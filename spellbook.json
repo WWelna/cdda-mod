@@ -7,11 +7,10 @@
         "description": "A strange book, claiming to be composed of 125% hand foraged recycled paper.",
         "weight": "920 g",
         "volume": "750 ml",
-        "price": 10000,
         "material": [ "paper" ],
         "looks_like": "cookbook",
         "symbol": "?",
         "color": "magenta",
-        "use_action": { "type": "learn_spell", "spells": [ "summon_storage_cube", "summon_liquid_cube", "summon_food_storage_cube", "make_rock" ] }
+        "use_action": { "type": "learn_spell", "spells": [ "summon_storage_cube", "summon_liquid_cube", "summon_food_storage_cube", "make_rock", "make_btea", "make_gtea", "kelvinist_heat_food", "kelvinist_anti_cold", "kelvinist_anti_heat", "kelvinist_firebolt" ] }
     }
 ]

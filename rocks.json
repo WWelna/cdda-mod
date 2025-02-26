@@ -9,12 +9,12 @@
         "effect": "spawn_item",
         "effect_str": "rock",
         "shape": "blast",
-        "min_damage": 40,
-        "max_damage": 40,
+        "min_damage": 120,
+        "max_damage": 120,
         "max_level": 0,
         "energy_source": "MANA",
         "base_casting_time": 50,
-        "base_energy_cost": 80,
+        "base_energy_cost": 240,
         "difficulty": 0
       }
 ]

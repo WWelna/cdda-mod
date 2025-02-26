@@ -79,15 +79,7 @@
                 "welder",
                 "cordless_impact_wrench",
                 "soldering_iron",
-                "large_repairkit",
-                "circsaw_off",
-                "electric_spinwheel",
-                "vac_mold",
-                "food_processor",
-                "hotplate_induction",
-                "multi_cooker",
-                "small_storage_battery",
-                "magazine_battery_mod"
+                "large_repairkit"
             ]
         }
     ],

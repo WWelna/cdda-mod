@@ -1,7 +1,7 @@
 [
   {
     "type": "MOD_INFO",
-    "ident": "mauh_mod",
+    "id": "mauh_mod",
     "name": "My Mod",
     "authors": [ "WWelna" ],
     "description": "New items and recipe rebalancing",

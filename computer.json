@@ -1,43 +1,37 @@
 [
     {
         "id": "mauh_computer",
-        "type": "TOOL_ARMOR",
-        "category": "armor",
-        "name": { "str": "Advanced Eyeglasses" },
+        "type": "TOOL",
+        "name": { "str": "Advanced Portable Computer" },
         "description": "Mauh Puter",
-        "weight": "42 g",
-        "volume": "250 ml",
-        "material": [ "glass", "plastic", "steel" ],
-        "symbol": "[",
-        "looks_like": "sunglasses",
-        "color": "dark_gray",
-        "material_thickness": 1,
-        "environmental_protection": 1,
-        "warmth": 10,
-        "to_hit": -1,
-        "armor": [ { "encumbrance": 1, "coverage": 95, "covers": [ "eyes" ], "rigid_layer_only": true } ],
-        "flags": [ "WATCH", "ALARMCLOCK", "THERMOMETER", "CALORIES_INTAKE", "STURDY", "WATER_FRIENDLY", "NO_UNLOAD", "NO_RELOAD", "ELECTRONIC", "FLASH_PROTECTION", "FANCY", "SKINTIGHT" ],
+        "weight": "158 g",
+        "volume": "137 ml",
+        "longest_side": "158 mm",
+        "material": [ "glass", "plastic", "aluminum" ],
+        "symbol": ";",
+        "color": "blue",
+        "flags": [ "WATCH", "ALARMCLOCK", "THERMOMETER", "CALORIES_INTAKE", "STURDY", "WATER_FRIENDLY", "NO_UNLOAD", "NO_RELOAD", "ELECTRONIC" ],
         "ammo": [ "battery" ],
+        "etransfer_rate": "30 MB",
         "charges_per_use": 1,
         "use_action": [
-          "EINKTABLETPC",
+          "E_FILE_DEVICE",
           "EBOOKSAVE",
-          "EBOOKREAD",
-          "ELECTRICSTORAGE",
           "CALORIES_INTAKE_TRACKER",
           "WEATHER_TOOL",
           "ROBOTCONTROL",
-          "REMOTEVEH",
-          { "type": "link_up", "cable_length": 5, "charge_rate": "280 W" }
+          "PORTABLE_GAME",
+          { "type": "link_up", "cable_length": 5, "charge_rate": "120 W" }
         ],
         "pocket_data": [
-          { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 1000 } },
+          { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 250 } },
           {
-            "pocket_type": "EBOOK",
+            "pocket_type": "E_FILE_STORAGE",
             "rigid": true,
             "max_contains_volume": "1 ml",
             "max_contains_weight": "1 g",
-            "weight_multiplier": 0.0
+            "weight_multiplier": 0.0,
+            "ememory_max": "1 TB"
           }
         ],
         "qualities": [ [ "HACK", 4 ] ]

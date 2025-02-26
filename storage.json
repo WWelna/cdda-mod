@@ -66,15 +66,14 @@
           },
           {
             "pocket_type": "CONTAINER",
-            "max_contains_volume": "30 L",
-            "max_contains_weight": "60 kg",
+            "max_contains_volume": "60 L",
+            "max_contains_weight": "120 kg",
             "max_item_length": "125 cm",
             "moves": 40,
             "weight_multiplier": 0.0,
             "volume_multiplier": 0.0,
             "volume_encumber_modifier": 0.0
           },
-          { "ammo_restriction": { "410shot": 48, "shot": 48 }, "moves": 5 },
           { "ammo_restriction": { "arrow": 80, "bolt": 80 }, "moves": 5 }
         ],
         "use_action": { "type": "holster", "holster_prompt": "Stick it in", "holster_msg": "You stick your %s into your %s" }
