@@ -1,0 +1,31 @@
+[
+    {
+      "id": "mauh_seeds",
+      "type": "ITEM",
+      "category": "container",
+      "name": { "str": "mauh seed vault" },
+      "looks_like": "bottle_plastic",
+      "description": "A Magic Vacuum Flask for storing seeds.",
+      "ascii_picture": "thermos",
+      "weight": "530 g",
+      "volume": "1250 ml",
+      "longest_side": "32 cm",
+      "price": "0 USD ",
+      "price_postapoc": "0 USD",
+      "material": [ "steel" ],
+      "symbol": "I",
+      "color": "green",
+      "pocket_data": [
+        {
+          "pocket_type": "CONTAINER",
+          "rigid": true,
+          "watertight": true,
+          "max_contains_volume": "500 ml",
+          "max_contains_weight": "2 kg",
+          "weight_multiplier": 0.25
+        }
+      ],
+      "insulation": 1600,
+      "flags": [ "COLLAPSE_CONTENTS", "BELT_CLIP", "TARDIS" ]
+  }
+]

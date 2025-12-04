@@ -1,57 +1,5 @@
 [
-    {
-        "id": "thermos_tea",
-        "type": "GENERIC",
-        "copy-from": "thermos",
-        "category": "tools",
-        "name": { "str": "endless tea bottle" },
-        "description": "A Thermos brand vacuum flask.  Built for temperature retention, helps keep things hot or cold.  Contains 4 L of liquid.",
-        "volume": "4250 ml",
-        "use_action": {
-          "target": "tea",
-          "container": "thermos_tea",
-          "target_charges": 16,
-          "moves": 100,
-          "type": "transform",
-          "need_empty": true
-        },
-        "pocket_data": [
-          {
-            "pocket_type": "CONTAINER",
-            "rigid": true,
-            "watertight": true,
-            "max_contains_volume": "4 L",
-            "max_contains_weight": "12 kg"
-          }
-        ]
-    },
-    {
-      "id": "thermos_teagreen",
-      "type": "GENERIC",
-      "copy-from": "thermos",
-      "category": "tools",
-      "name": { "str": "endless green tea bottle" },
-      "description": "A Thermos brand vacuum flask.  Built for temperature retention, helps keep things hot or cold.  Contains 4 L of liquid.",
-      "volume": "4250 ml",
-      "use_action": {
-        "target": "tea_green",
-        "container": "thermos_teagreen",
-        "target_charges": 16,
-        "moves": 100,
-        "type": "transform",
-        "need_empty": true
-      },
-      "pocket_data": [
-        {
-          "pocket_type": "CONTAINER",
-          "rigid": true,
-          "watertight": true,
-          "max_contains_volume": "4 L",
-          "max_contains_weight": "12 kg"
-        }
-      ]
-  },
-  {
+      {
     "id": "make_btea",
     "type": "SPELL",
     "name": "Summon Delicious Black Tea",

@@ -1,7 +1,9 @@
 [
     {
         "id": "mauh_computer",
-        "type": "TOOL",
+        "type": "ITEM",
+        "subtypes": [ "TOOL" ],
+        "category": "tools",
         "name": { "str": "Advanced Portable Computer" },
         "description": "Mauh Puter",
         "weight": "158 g",
@@ -10,21 +12,22 @@
         "material": [ "glass", "plastic", "aluminum" ],
         "symbol": ";",
         "color": "blue",
-        "flags": [ "WATCH", "ALARMCLOCK", "THERMOMETER", "CALORIES_INTAKE", "STURDY", "WATER_FRIENDLY", "NO_UNLOAD", "NO_RELOAD", "ELECTRONIC" ],
-        "ammo": [ "battery" ],
-        "etransfer_rate": "30 MB",
+        "flags": [ "WATCH", "ALARMCLOCK", "THERMOMETER", "STURDY", "WATER_FRIENDLY", "CAN_USE_IN_DARK", "NO_UNLOAD", "NO_RELOAD", "ELECTRONIC", "USE_UPS", "HYGROMETER", "BAROMETER" ],
+        "tool_ammo": [ "battery" ],
+        "e_port": "tablet",
+        "etransfer_rate": "60 MB",
         "charges_per_use": 1,
         "use_action": [
           "E_FILE_DEVICE",
           "EBOOKSAVE",
-          "CALORIES_INTAKE_TRACKER",
+          "CAMERA",
           "WEATHER_TOOL",
           "ROBOTCONTROL",
           "PORTABLE_GAME",
-          { "type": "link_up", "cable_length": 5, "charge_rate": "120 W" }
+          { "type": "link_up", "cable_length": 7, "charge_rate": "300 W" }
         ],
         "pocket_data": [
-          { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 250 } },
+          { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 500 } },
           {
             "pocket_type": "E_FILE_STORAGE",
             "rigid": true,

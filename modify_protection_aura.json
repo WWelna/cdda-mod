@@ -1,0 +1,10 @@
+[
+    {
+        "id": "protect_env",
+        "type": "ITEM",
+        "subtypes": [ "ARMOR" ],
+        "copy-from": "protect_env",
+        "extend": { "flags": [ "GAS_PROOF", "RAD_PROOF", "ELECTRIC_IMMUNE", "IRRITANT_IMMUNE" ] },
+        "environmental_protection": 40
+    }
+]

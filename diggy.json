@@ -1,6 +1,7 @@
 [
     {
-        "type": "TOOL",
+        "type": "ITEM",
+        "subtypes": [ "TOOL" ],
         "id": "wand_turning",
         "name": { "str": "wand of turning earth", "str_pl": "wands of turning earth" },
         "copy-from": "spell_wand",
