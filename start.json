@@ -154,7 +154,8 @@
 					{ "group": "crystallized_mana_bag_zipper_gallon"},
 					{ "group": "gummy_vitamins_bottle_folding"},
 					{ "group": "ringring"},
-					{ "group": "full_ifak" }
+					{ "group": "full_ifak" },
+					{ "item": "tea", "container-item": "mauh_thermos" }
 				]
 			},
 			"male":[ "briefs" ],
@@ -193,7 +194,6 @@
 			{ "item": "mtailors_kit", "ammo-item": "thread", "charges": 1000 },
 			{ "item": "heavy_plus_battery_cell", "ammo-item": "battery", "charges": 503, "container-item": "large_repairkit" },
 			{ "item": "heavy_plus_battery_cell", "ammo-item": "battery", "charges": 503, "container-item": "UPS_OFF" },
-			{ "item": "tea", "container-item": "mauh_thermos" },
 			{ "item": "mortar_pestle" },
 			{ "item": "still" },
 			{ "item": "still_lab" },
@@ -206,6 +206,8 @@
 			{ "item": "rum", "container-item": "jug_clay" },
 			{ "item": "chemistry_set" },
 			{ "item": "disinfectant" },
+			{ "item": "fur_rollmat" },
+			{ "item": "fishing_rod_2pc_packed" },
 			{ "item": "bandages", "count": 3 },
 			{ "item": "vinegar", "container-item": "bottle_folding" },
 			{ "item": "lamp_oil", "container-item": "bottle_folding" }
@@ -220,14 +222,12 @@
 			{ "item": "rune_magus_weapon_adept" },
 			{ "item": "jade_nagamaki" },
 			{ "item": "e_tool" },
-			{ "item": "fur_rollmat" },
 			{ "item": "multitool" },
 			{ "item": "hacksaw" },
 			{ "item": "folding_poncho", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "cloak_leather", "custom-flags": [ "no_auto_equip" ] },
 			{ "item": "mess_kit" },
 			{ "item": "scalpel" },
-			{ "item": "fishing_rod_2pc_packed" },
 			{ "item": "butchering_kit" },
 			{ "item": "pickaxe" },
 			{ "item": "rope_30" },
