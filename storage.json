@@ -5,9 +5,7 @@
         "copy-from": "mring_platinum",
         "id": "mauh_storage_ring",
         "name": { "str": "mauh storage ring" },
-        "price": "67000 USD",
         "longest_side": "2 cm",
-        "price_postapoc": "100000 USD",
         "description": "A glistening ring holding a small dimensional space inside.",
         "pocket_data": [
             {
@@ -19,7 +17,51 @@
                 "holster": true,
                 "weight_multiplier": 0.0,
                 "volume_multiplier": 0.0,
-                "volume_encumber_modifier": 0.0
+                "volume_encumber_modifier": 0.0,
+                "watertight": true,
+                "item_restriction": [
+                    "arming_sword",
+                    "mc_arming_sword",
+                    "hc_arming_sword",
+                    "ch_arming_sword",
+                    "qt_arming_sword",
+                    "khopesh",
+                    "sword_bronze",
+                    "tanto",
+                    "wakizashi",
+                    "mc_wakizashi",
+                    "hc_wakizashi",
+                    "ch_wakizashi",
+                    "qt_wakizashi",
+                    "zweihander",
+                    "mc_zweihander",
+                    "hc_zweihander",
+                    "ch_zweihander",
+                    "qt_zweihander",
+                    "nodachi",
+                    "mc_nodachi",
+                    "hc_nodachi",
+                    "ch_nodachi",
+                    "qt_nodachi",
+                    "broadsword",
+                    "mc_broadsword",
+                    "hc_broadsword",
+                    "ch_broadsword",
+                    "qt_broadsword",
+                    "katana",
+                    "mc_katana",
+                    "hc_katana",
+                    "ch_katana",
+                    "qt_katana",
+                    "jade_nagamaki",
+                    "butterfly_swords",
+                    "kriegsmesser",
+                    "mc_kriegsmesser",
+                    "hc_kriegsmesser",
+                    "ch_kriegsmesser",
+                    "qt_kriegsmesser",
+                    "bokken"
+                ]
             },
             {
                 "pocket_type": "CONTAINER",
@@ -30,7 +72,28 @@
                 "holster": true,
                 "weight_multiplier": 0.0,
                 "volume_multiplier": 0.0,
-                "volume_encumber_modifier": 0.0
+                "volume_encumber_modifier": 0.0,
+                "watertight": true,
+                "item_restriction": [
+                    "i_staff",
+                    "lc_steel_staff",
+                    "mc_steel_staff",
+                    "hc_steel_staff",
+                    "ch_steel_staff",
+                    "qt_steel_staff",
+                    "q_staff",
+                    "bo",
+                    "shillelagh",
+                    "shillelagh_weighted",
+                    "shock_staff",
+                    "laevateinn",
+                    "rune_magus_weapon",
+                    "rune_magus_weapon_adept",
+                    "magi_staff_minor",
+                    "magi_staff_lesser",
+                    "magi_staff_greater",
+                    "bleed_staff_minor"
+                ]
             },
             {
                 "pocket_type": "CONTAINER",
@@ -41,7 +104,9 @@
                 "holster": true,
                 "weight_multiplier": 0.0,
                 "volume_multiplier": 0.0,
-                "volume_encumber_modifier": 0.0
+                "volume_encumber_modifier": 0.0,
+                "watertight": true,
+                "spoil_multiplier": 0.0
             },
             {
                 "pocket_type": "CONTAINER",
@@ -51,10 +116,12 @@
                 "moves": 40,
                 "weight_multiplier": 0.0,
                 "volume_multiplier": 0.0,
-                "volume_encumber_modifier": 0.0
+                "volume_encumber_modifier": 0.0,
+                "watertight": true,
+                "spoil_multiplier": 0.0
             }
         ],
-        "insulation": 15,
+        "insulation": 9001,
         "use_action": { "type": "holster", "holster_prompt": "Stick what into your ring", "holster_msg": "You tuck your %s into your %s" }
     }
 ]

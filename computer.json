@@ -1,42 +1,60 @@
 [
-    {
-        "id": "mauh_computer",
-        "type": "ITEM",
-        "subtypes": [ "TOOL" ],
-        "category": "tools",
-        "name": { "str": "Advanced Portable Computer" },
-        "description": "Mauh Puter",
-        "weight": "158 g",
-        "volume": "137 ml",
-        "longest_side": "158 mm",
-        "material": [ "glass", "plastic", "aluminum" ],
-        "symbol": ";",
-        "color": "blue",
-        "flags": [ "WATCH", "ALARMCLOCK", "THERMOMETER", "STURDY", "WATER_FRIENDLY", "CAN_USE_IN_DARK", "NO_UNLOAD", "NO_RELOAD", "ELECTRONIC", "USE_UPS", "HYGROMETER", "BAROMETER" ],
-        "tool_ammo": [ "battery" ],
-        "e_port": "tablet",
-        "etransfer_rate": "60 MB",
-        "charges_per_use": 1,
-        "use_action": [
-          "E_FILE_DEVICE",
-          "EBOOKSAVE",
-          "CAMERA",
-          "WEATHER_TOOL",
-          "ROBOTCONTROL",
-          "PORTABLE_GAME",
-          { "type": "link_up", "cable_length": 7, "charge_rate": "300 W" }
-        ],
-        "pocket_data": [
-          { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 500 } },
-          {
-            "pocket_type": "E_FILE_STORAGE",
-            "rigid": true,
-            "max_contains_volume": "1 ml",
-            "max_contains_weight": "1 g",
-            "weight_multiplier": 0.0,
-            "ememory_max": "1 TB"
-          }
-        ],
-        "qualities": [ [ "HACK", 4 ] ]
+  {
+    "id": "mauh_computer",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR" ],
+    "category": "clothing",
+    "name": { "str": "Advanced Portable Computer" },
+    "description": "Mauh Puter",
+    "weight": "61 g",
+    "volume": "125 ml",
+    "material": [ "glass", "plastic", "aluminum" ],
+    "symbol": "[",
+    "color": "light_gray",
+    "sided": true,
+    "flags": [
+      "WATCH",
+      "ALARMCLOCK",
+      "CALORIE_BURN",
+      "STURDY",
+      "BELTED",
+      "WATER_FRIENDLY",
+      "CAN_USE_IN_DARK",
+      "NO_UNLOAD",
+      "NO_RELOAD",
+      "ELECTRONIC",
+      "USE_UPS",
+      "THERMOMETER",
+      "HYGROMETER",
+      "BAROMETER"
+    ],
+    "tool_ammo": [ "battery" ],
+    "e_port": "phone",
+    "etransfer_rate": "60 MB",
+    "charges_per_use": 1,
+    "use_action": [
+      "E_FILE_DEVICE",
+      "EBOOKSAVE",
+      "CAMERA",
+      "WEATHER_TOOL",
+      "ROBOTCONTROL",
+      "PORTABLE_GAME",
+      "CALORIES_INTAKE_TRACKER",
+      "FITNESS_CHECK",
+      { "type": "link_up", "cable_length": 7, "charge_rate": "300 W" }
+    ],
+    "pocket_data": [
+      { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 250 } },
+      {
+        "pocket_type": "E_FILE_STORAGE",
+        "rigid": true,
+        "max_contains_volume": "1 ml",
+        "max_contains_weight": "1 g",
+        "weight_multiplier": 0.0,
+        "ememory_max": "1 TB"
       }
+    ],
+    "armor": [ { "coverage": 100, "covers": [ "hand_l", "hand_r" ], "specifically_covers": [ "hand_wrist_l", "hand_wrist_r" ] } ],
+    "qualities": [ [ "HACK", 4 ] ]
+  }
 ]
