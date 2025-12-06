@@ -85,6 +85,8 @@
             { "id": "kelvinist_anti_cold", "level": 12 },
 			{ "id": "kelvinist_anti_heat", "level": 12 },
             { "id": "kelvinist_extinguish_fire_spell", "level": 12 },
+			{ "id": "kelvinist_summon_freezer_spell", "level": 8 },
+			{ "id": "mauh_kelvinist_summon_freezer_spell", "level": 8 },
 			{ "id": "classless_watch_spell", "level": 1 },
 			{ "id": "protection_aura", "level": 15 },
 			{ "id": "ethereal_grasp", "level": 8 },

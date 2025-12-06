@@ -1,0 +1,57 @@
+[
+    {
+        "id": "mauh_kelvinist_summon_freezer_spell",
+        "type": "SPELL",
+        "name": { "str": "Huge Freezer Field" },
+        "description": "Summon an even bigger sphere of ice that will preserve anything placed inside while the container lasts.",
+        "flags": [ "CONJURATION_SPELL", "CONCENTRATE", "SOMATIC", "VERBAL" ],
+        "valid_targets": [ "self" ],
+        "extra_effects": [ { "id": "eoc_summon_setup", "hit_self": true } ],
+        "max_level": 15,
+        "difficulty": 6,
+        "spell_class": "KELVINIST",
+        "effect": "spawn_item",
+        "effect_str": "mauh_item_kelvinist_icy_freezing_container",
+        "shape": "blast",
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_duration": 51840000,
+        "max_duration": 327240000,
+        "duration_increment": 18360000,
+        "magic_type": "magiclysm_generic_magic",
+        "base_energy_cost": 1000,
+        "base_casting_time": 1500
+    },
+    {
+        "id": "mauh_item_kelvinist_icy_freezing_container",
+        "type": "ITEM",
+        "category": "container",
+        "name": { "str": "huge freezer field" },
+        "looks_like": "art_sphere",
+        "description": "A massive large, hollow sphere of ice.  Food placed inside will not rot.",
+        "weight": "16 kg",
+        "volume": "290 L",
+        "longest_side": "1250 mm",
+        "price": "0 cent",
+        "price_postapoc": "0 cent",
+        "to_hit": -1,
+        "material": [ "water" ],
+        "phase": "solid",
+        "symbol": "o",
+        "color": "white",
+        "pocket_data": [
+            {
+            "pocket_type": "CONTAINER",
+            "rigid": true,
+            "watertight": true,
+            "max_contains_volume": "250 L",
+            "max_contains_weight": "250 kg",
+            "spoil_multiplier": 0.0,
+            "weight_multiplier": 0.25
+            }
+        ],
+        "flags": [ "UNBREAKABLE_MELEE", "NONCONDUCTIVE", "NO_REPAIR", "NO_SALVAGE", "TRADER_AVOID" ],
+        "qualities": [ [ "CONTAIN", 1 ] ],
+        "melee_damage": { "bash": 1 }
+    }
+]
