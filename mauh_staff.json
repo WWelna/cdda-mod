@@ -1,0 +1,60 @@
+[
+  {
+    "type": "ITEM",
+    "subtypes": [ "ARTIFACT" ],
+    "id": "mauhstaff-retracted",
+    "category": "weapons",
+    "name": "Mauh Magick Stick (baton)",
+    "description": ".",
+    "weight": "1600 g",
+    "symbol": "/",
+    "color": "brown",
+    "material": [ "gold", "silver", "wood", "diamond" ],
+    "techniques": [ "WBLOCK_1", "RAPID" ],
+    "weapon_category": [ "BATONS" ],
+    "to_hit": { "grip": "weapon", "length": "hand", "surface": "any", "balance": "neutral" },
+    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "BELT_CLIP", "TRADER_AVOID", "MAGIC_FOCUS" ],
+    "use_action": {
+      "menu_text": "Extend to staff",
+      "type": "transform",
+      "target": "mauhstaff-extended",
+      "msg": "You extend mauh magic stick into a staff.",
+      "moves": 50,
+      "need_wielding": true
+    },
+    "volume": "750 ml",
+    "longest_side": "60 cm",
+    "melee_damage": { "bash": 30 },
+    "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 1.25 } ] } ]
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "ARTIFACT" ],
+    "id": "mauhstaff-extended",
+    "category": "weapons",
+    "name": "Mauh Magick Stick (staff)",
+    "copy-from": "mauhstaff-retracted",
+    "description": ".",
+    "weight": "1600 g",
+    "volume": "1550 ml",
+    "longest_side": "185 cm",
+    "symbol": "/",
+    "color": "brown",
+    "looks_like": "q_staff",
+    "material": [ "gold", "silver", "wood", "diamond" ],
+    "techniques": [ "WBLOCK_2", "RAPID", "SWEEP" ],
+    "weapon_category": [ "QUARTERSTAVES" ],
+    "to_hit": { "grip": "weapon", "length": "long", "surface": "any", "balance": "good" },
+    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "ALWAYS_TWOHAND", "SHEATH_SPEAR", "TRADER_AVOID", "MAGIC_FOCUS" ],
+    "use_action": {
+      "menu_text": "Retract to baton",
+      "type": "transform",
+      "target": "mauhstaff-retracted",
+      "msg": "You retract mauh magic stick into a baton.",
+      "moves": 50,
+      "need_wielding": true
+    },
+    "melee_damage": { "bash": 45 },
+   "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 1.25 } ] } ]
+  }
+]
