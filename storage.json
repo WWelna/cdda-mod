@@ -75,8 +75,7 @@
                 "volume_encumber_modifier": 0.0,
                 "watertight": true,
                 "item_restriction": [
-                    "mauhstaff-retracted",
-                    "mauhstaff-extended",
+                    "halligan",
                     "i_staff",
                     "lc_steel_staff",
                     "mc_steel_staff",

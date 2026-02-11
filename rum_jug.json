@@ -1,0 +1,38 @@
+[
+  {
+    "id": "mauh_jug_clay",
+    "type": "ITEM",
+    "category": "container",
+    "name": { "str": "magic clay jug" },
+    "looks_like": "bowl_clay",
+    "description": "A clay container with a waterproofed hide lid, used to hold and pour liquids. For some reason it's always full of rum.",
+    "ascii_picture": "jug_clay",
+    "weight": "530 g",
+    "volume": "1250 ml",
+    "material": [ "clay" ],
+    "symbol": ")",
+    "color": "brown",
+    "pocket_data": [
+        {
+          "pocket_type": "CONTAINER",
+          "rigid": true,
+          "watertight": true,
+          "max_contains_volume": "4 L",
+          "max_contains_weight": "16 kg",
+          "weight_multiplier": 0.25
+        }
+    ],
+    "use_action": {
+        "target": "rum",
+        "msg": "Ermagerd Rum",
+        "container": "mauh_jug_clay",
+        "target_charges": 16,
+        "moves": 100,
+        "type": "transform",
+        "need_empty": true
+    },
+    "melee_damage": { "bash": 2 },
+    "insulation": 1600,
+    "flags": [ "COLLAPSE_CONTENTS", "TARDIS" ]
+  }
+]
